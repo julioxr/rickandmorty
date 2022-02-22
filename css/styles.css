@@ -11,7 +11,10 @@
 
 /* Inicio header */
 .header {
-    background: #000;
+    background: url(../images/fondo.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
@@ -100,3 +103,33 @@ h1 {
 }
 
 /* Fin footer */
+
+/* Inicio de media querys */
+@media all and (max-width: 800px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aside {
+        display: flex;
+    }
+
+    .publicidad {
+        flex-grow: 1;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    }
+
+    .aside {
+        flex-direction: column;
+    }
+}
