@@ -1,7 +1,11 @@
 * {
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 .padre {
@@ -20,57 +24,94 @@
 }
 
 .menu {
-    background: #2d4059;
+    background: rgba(0, 0, 0, 0.1);
     display: flex;
-    height: 100px;
+    height: 60px;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .logo {
-    background: #ea5455;
     flex-grow: 1;
-    height: 30px;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.logo a:hover {
+    color: #343434;
 }
 
 .nav {
-    background: #ea5455;
     flex-grow: 5;
-    height: 30px;
+}
+
+.nav a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.nav a:hover {
+    color: #343434;
 }
 
 .social {
-    background: #ea5455;
     flex-grow: 1;
-    height: 30px;
+}
+
+.social a {
+    font-size: 18px;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: #343434;
 }
 
 .texto-principal {
-    background: #f07b3f;
+    height: 580px;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
-    background: #ffd460;
+    font-family: serif;
+    font-size: 21px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
 }
 
 /* Fin header */
 
 /* Inicio Section */
 .section {
-    background: #000;
     display: flex;
 }
 
 .articulos {
-    background: #4e4e6a;
     flex-grow: 2;
     display: flex;
     flex-wrap: wrap;
 }
 
 .article {
-    background: #1f6cb0;
     flex-grow: 1;
     flex-basis: 40%;
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.foto {
+    width: 280px;
 }
 
 .navegacion {
