@@ -1,6 +1,6 @@
 * {
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -11,6 +11,10 @@ a {
 .padre {
     display: flex;
     flex-direction: column;
+}
+
+.padding-interno {
+    padding: 0 50px;
 }
 
 /* Inicio header */
@@ -28,7 +32,6 @@ a {
     display: flex;
     height: 60px;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .logo {
@@ -46,6 +49,8 @@ a {
 
 .nav {
     flex-grow: 5;
+    display: flex;
+    justify-content: center;
 }
 
 .nav a {
@@ -62,6 +67,8 @@ a {
 
 .social {
     flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .social a {
@@ -93,31 +100,78 @@ h1 {
 
 /* Inicio Section */
 .section {
+    background: #f7f7f7;
     display: flex;
 }
 
 .articulos {
+    background: #f7f7f7;
     flex-grow: 2;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .article {
     flex-grow: 1;
-    flex-basis: 40%;
+    flex-basis: 45%;
     color: #444;
     font-size: 13px;
     letter-spacing: 1px;
+    margin: 10px 10px 0 0;
+    background: #ececec;
+    max-width: 400px;
+}
+
+.article img {
+    width: 100%;
+}
+
+.article a {
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 10px;
+    background: #000;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.article a:hover {
+    background: #546cc3;
+}
+
+h3 {
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 10px;
+    margin-top: -80px;
+}
+
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0 0 10px 10px;
+    color: #fff;
 }
 
 .foto {
-    width: 280px;
+    padding: 0;
+    margin: 0;
 }
 
 .navegacion {
-    background: #70a3c4;
+    background: #000;
     flex-grow: 1;
     flex-basis: 100%;
+    margin: 10px 10px 0 0;
+}
+
+.navegacion a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
 }
 
 .aside {
@@ -136,11 +190,19 @@ h1 {
     background: #000;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .pie {
-    background: #e6af2e;
-    width: 300px;
+    text-align: center;
+}
+
+.pie a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
 }
 
 /* Fin footer */
